@@ -1,0 +1,8 @@
+Run grids of models using the spectral synthesis code Cloudy, taking advantage of multiple cores, and then parse the output.
+
+Example
+-------
+
+copy this directory to somewhere that your PYTHONPATH variable points to, and then add the scripts/ directory to your PATH. Run a Cloudy grid with
+
+  run_cloudy_grid

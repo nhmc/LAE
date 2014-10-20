@@ -1,0 +1,38 @@
+FORS_spec.txt
+
+  A list of each observe with a spectrum from FORS. Columns give the
+  object ID (use to match to the images in FORS_spec/), the template
+  used to measure a redshift, the estimated redshift, the
+  identification confidence (a=high confidence, b=uncertain,
+  c=unknown) and the coordinates (degrees J2000).
+
+FORS_spec/
+
+  FORS 1d spectra and 2d spectral images, with a template overplotted
+  at the redshift given in the table above.
+
+LAE.txt
+
+  The extracted FORS spectrum of the Lyman-alpha emitting galaxy at
+  z=2.466. This has columns wavelength (Angstroms), flux (f_lambda),
+  1-sigma flux uncertainty, and sky background. The dip to negative
+  fluxes at 4500-4700 Angstroms is due to diffuse emission
+  contaminating the sky in this spectral region. This is likely due to
+  'Ly-alpha fuzz' associated with the background QSO Q0002-422, and so
+  unrelated to the galaxy.
+
+  The raw data for these observations can be downloaded from the ESO
+  archive.
+
+q0002m422_nhmc_cont.txt
+
+  The combined, continuum-fitted UVES spectrum of QSO
+  Q0002-422. Columns give the wavelength in (Angstroms), flux
+  (f_lambda), 1 sigma flux uncertainty and continuum.
+
+  The raw data for these observations can be downloaded from the ESO
+  archive.
+
+imaging/
+
+  u, g and r imaging around the QSO field.

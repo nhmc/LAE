@@ -1,0 +1,36 @@
+The following files and folders are included. Most directories contain
+another README with information on its contents. Feel free to contact
+me (neilcrighton@gmail.com) if you want to get this code to run on
+your machine. It may take some work!
+
+
+diff
+
+  This contains a latexdiff showing changes between the initial
+  version submitted to the arXiv, and the accepted version.
+
+python_modules
+
+  Contains the modules and packages used by various python
+  scripts. Add this directory to your PYTHONPATH to use these.
+
+cloudy
+
+  Grids of cloudy models and scripts to run mcmc sampling and make
+  plots.
+
+data
+
+  Galaxy spectra, QSO spectrum and imaging of the field.
+
+magphys
+
+  Data used for SED fitting with MAGPHYS.
+
+scripts
+
+  Files use to do calculations in the paper and make plots.
+
+vpfit
+
+  Voigt profile models found using VPFIT.

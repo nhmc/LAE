@@ -1,0 +1,18 @@
+# name : parameter name
+# cen  : central value (half way between the marginalised 1 sigma region)
+# sig  : 1 sigma error around central value
+# m1l  : 1 sigma lower level (marginalised over all other parameters)
+# m1u  : 1 sigma upper level (marginalised)
+# m2l  : 2 sigma lower level (marginalised) 
+# m2u  : 2 sigma upper level (marginalised) 
+# j1l  : 1 sigma lower level (joint with all other parameters) 
+# j1u  : 1 sigma upper level (joint)
+# j2l  : 2 sigma lower level (joint) 
+# j2u  : 2 sigma upper level (joint) 
+# ml   : maximum likelihood value
+# med  : median value
+name cen     sig     m1l     m1u     m2l     m2u    j1l     j1u    j2l     j2u      med     ml
+NHI  15.23   0.01223 15.22   15.24   15.21   15.26  15.21   15.26  15.2    15.26    15.23   15.23
+nH   -2.38   0.1178  -2.498  -2.262  -2.604  -2.137 -2.61   -2.13  -2.713  -2.065   -2.371  -2.357
+Z    -0.3995 0.1214  -0.5208 -0.2781 -0.6372 -0.166 -0.6504 -0.166 -0.7832 -0.08643 -0.3983 -0.3808
+aUV  -0.1317 0.2741  -0.4058 0.1424  -0.6599 0.3856 -0.7241 0.3798 -0.9901 0.5475   -0.1556 -0.121

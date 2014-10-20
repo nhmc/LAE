@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+"""
+You must have a file observations.dat and filters.dat in this
+directory, and the magphys environment variable must be set. That's
+it!
+"""
+
+from subprocess import call
+import os
+
+cosmo = '70.,0.30,0.70'
+
+prefix = os.environ['magphys']
+
+os.environ['FILTERS'] = prefix + '/FILTERBIN.RES'
+os.environ['OPTILIB'] =  prefix + '/OptiLIB_cb07.bin'
+os.environ['OPTILIBIS'] = prefix + '/OptiLIBis_cb07.bin'
+os.environ['IRLIB'] = prefix + '/InfraredLIB.bin'
+
+os.environ['USER_FILTERS'] = 'filters.dat'
+os.environ['USER_OBS'] = 'observations.dat'
+
+if not os.path.exists('zlibs.dat'):
+    call('echo "n" | xargs -n 1 | ' + prefix + "/make_zgrid", shell=1)
+    print ''
+else:
+    print '#### zlibs.dat exists, skipping make_zgrid'
+
+
+# get the observation names
+fh = open('observations.dat', 'r')
+obsnames = [l.split()[0] for l in fh if not l.strip().startswith('#')]
+fh.close()
+
+indobj = []
+fh = open('zlibs.dat', 'r')
+for i,line in enumerate(fh):
+    print '####', line
+    ind,z = line.split()
+    indobj.append((obsnames[i], ind, z))
+    if not os.path.exists('starformhist_cb07_z{}.lbr'.format(z)):        
+        s = 'echo {} "{}" | xargs -n 1 | {}/get_optic_colors'.format(
+            z, cosmo, prefix)
+        print '#### ', s
+        call(s, shell=1)
+    else:
+        print '#### Skipping get_optic_colors'
+
+    if not os.path.exists('infrared_dce08_z{}.lbr'.format(z)):        
+        s = 'echo {} "{}" | xargs -n 1 | {}/get_infrared_colors'.format(
+            z, cosmo, prefix)
+        print '#### ', s
+        call(s, shell=1)
+    else:
+        print '#### Skipping get_infrared_colors'
+
+fh.close()
+
+for name,ind,z in indobj:
+    print '####', ind, z 
+
+    if not (os.path.exists(name + '.fit') and os.path.exists(name + '.sed')): 
+        s = 'echo {} | xargs -n 1 | {}/fit_sed_uplimits'.format(
+            ind, prefix)
+        print '####', s
+        call(s, shell=1)
+    else:
+        print '#### Skipping {} {} z={}'.format(name, ind, z)
+
+    

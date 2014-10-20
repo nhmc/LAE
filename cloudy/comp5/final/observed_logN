@@ -1,0 +1,32 @@
+# column densities for the component showing D, to be compared to
+# cloudy models.
+
+# logN, logN sigma down, logN sigma up (same as up if not given). For
+# a lower limit, set sigma down to 0 and sigma up to something big.
+# For an upper limit, set sigma up to 0 and sigma down to something
+# big.
+
+# estimate errors from model and b uncertainties
+HI =  16.50 0.1
+
+# Errors are 1 sigma from vpfit
+CII  =  13.72  0.01
+MgII =  12.91  0.01
+SiII =  12.85  0.01
+AlII =  11.528 0.036
+AlIII = 12.025 0.017
+FeIII = 12.97  0.05
+
+# lower limit (saturated)
+SiIII = 13.75  0     5
+
+# heavily blended with broader abs, so sholdn't use these. (use dont_use)
+CIV  =  13.74  0.04
+SiIV =  13.43  0.01
+
+# upper limits, either blends or non-detections (these are actually
+# limits across components 4,5,6) 
+OI =  12.772   5   0 
+NII = 13.179   5   0 
+NV = 13.6     5   0
+OVI = 14.000   5   0

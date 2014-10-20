@@ -1,0 +1,19 @@
+run_MAGPHYS
+
+  A script for running MAGPHYS
+  (http://www.iap.fr/magphys/magphys/MAGPHYS.html). Change to ugr/ and
+  run with bash ../run_MAGPHYS.
+
+Jy_from_ABmag.py
+
+  Used to print the fluxes of the LAE from the magnitudes in a format
+  MAGPHYS understands. These fluxes are saved in ugr/observations.dat
+
+ugr/
+  
+  Contains input and output files for MAGPHYS.
+
+da_Cunha_UDF/
+
+  Contains the table of galaxies from the Ultra deep field with
+  parameters estimated using MAGPHYS (from da Cuhna et al. 2013).

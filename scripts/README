@@ -1,0 +1,47 @@
+averageTransmission.dat
+
+  Output of IGMtransmission. Used by calc_extinct.py
+
+LAE paper repo.ipynb.json
+  
+  An ipython notebook containing most of the calculations done for
+  Sections 4 and 5. Figures 1 and 2 are also generated using this
+  code.
+
+HeII_gamma_check.py
+
+  This is used to calculate the HeII and HI ionization rates for the
+  incident UV slopes we use in Cloudy modelling. These values are then
+  compared to the constrains from Worseck et al. 2014 in Appendix B2.
+
+SED_mass_plot.py
+
+  This generates Figure 3.
+
+calc_extinct.py
+
+  Calculates the extinction in u, g and r bands from IGMtransmission.
+
+fig_metals2.py
+
+  Makes Figure 4.
+
+find_NHI_tot.py
+
+  Makes Figure 5.
+
+parplot.py
+
+  Makes Figure 8.
+
+plot_incident_field_trans.py
+
+  Makes Figure B1.
+
+plot_incident_field.py
+
+  Makes Figure B2.
+
+test_aUV_2.py
+
+  Makes Figure B3.

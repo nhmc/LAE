@@ -1,0 +1,40 @@
+J000448-415729_slits.reg
+
+  A ds9 region file showing he slit positions of our FORS observations.
+
+specz.reg
+
+  A ds9 region file showing the positions of objects with secure
+  redshifts (green) or tentative redshifts (cyan) from FORS
+  spectra. Several objects close to the QSO also have spectra taken
+  with Magellan/IMACS. These will be made available in a future
+  publication (Cooksey et al., in preparation).
+
+PIXSCALE
+SEEING
+
+  Files giving the seeing FWHM and PIXSCALE scale.
+
+conf/
+
+  sextractor configuration files.
+
+u.fits
+g.fits
+r.fits
+
+  Combined images.
+
+run_sextractor.sh
+  
+  Script used to run sextractor on each of the images.
+  
+psf_sub.py
+rsub.fits
+
+  Script attempting a PSF subtraction of the QSO, and the subtracted r
+  band image. There is an extended object closer to the QSO than the
+  LAE but on the opposite side of the QSO psf. We don't have a
+  redshift for this object, but the best explanation is a galaxy
+  connected to the extremely strong MgII system (rest EW_2796=4.4 Ang)
+  at z=0.836.

@@ -1,0 +1,23 @@
+all.f26
+
+  Voigt profile parameters fitted to each absorption component in the
+  VPFIT fort.26 format. See the VPFIT documentation for a description of
+  the file format. There are several groups of fitting regions and
+  parameters, in each case the fitting regions are listed directly above
+  the parameters they are used to estimate.
+
+
+atom.dat
+
+  Transition data used by VPFIT
+
+vp_setup.dat
+
+  Configuration file for VPFIT
+
+plot.cfg
+transitions_all
+
+  Configuration files for plotspec and plotvel
+  (https://github.com/nhmc/plotspec)
+

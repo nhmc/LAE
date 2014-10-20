@@ -1,0 +1,45 @@
+comp1
+comp2
+comp3
+comp4
+comp5
+comp6
+comp7
+comp8
+
+  These contain the cloudy solutions and plots for each component in
+  directories final/
+
+find_par.py
+
+  Make plots from cloudy solutions. These make the plots for figures 6
+  and 7, and B4-B17.
+
+grid
+ 
+  This contains the data from each set of cloudy grids. The original
+  Cloudy input and outputs are not included due to save space, but
+  example inputs and outputs are in all/uvb_k00/input/ and
+  all/uvb_k00/output/
+
+model.cfg
+
+  Configuration data used by model.py
+
+model.py
+
+  An input file used when running emcee.
+
+run_emcee.py
+
+  A scripts used to run emcee to estimate parameters in a component.
+  Run this from one of the comp* directories.
+
+printpar.sh
+setup.sh
+run.sh
+
+  Helper scripts to set up the directories and run the scripts above
+  on each component.
+
+
