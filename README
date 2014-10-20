@@ -1,17 +1,23 @@
+This repository has code and data used in the paper "Metal-enriched,
+sub-kiloparsec gas clumps in the circumgalactic medium of a faint z =
+2.5 galaxy" (http://arxiv.org/abs/1406.4239). If you find any of the
+data or code in this repository useful for a publication, please
+consider citing that paper.
+
 The following files and folders are included. Most directories contain
-another README with information on its contents. Feel free to contact
-me (neilcrighton@gmail.com) if you want to get this code to run on
-your machine. It may take some work!
+another README with information on their contents. Feel free to
+contact me (neilcrighton@gmail.com) if you want to get any code to run
+on your machine. It may take some work!
 
 
 diff
 
   This contains a latexdiff showing changes between the initial
-  version submitted to the arXiv, and the accepted version.
+  version submitted to the arXiv and the final accepted version.
 
 python_modules
 
-  Contains the modules and packages used by various python
+  Contains the modules and packages needed by various python
   scripts. Add this directory to your PYTHONPATH to use these.
 
 cloudy
